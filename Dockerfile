@@ -3,10 +3,10 @@ FROM hashicorp/packer:light@sha256:f795aace438ef92e738228c21d5ceb7d5dd73ceb7e0b1
 
 RUN apk update && \
     apk upgrade && \
-    apk add curl=7.83.1-r2 && \
-    apk add git=2.36.2-r0 && \
-    apk add openssl=1.1.1q-r0 && \
-    apk add gnupg=2.2.35-r4 && \
+    apk add curl && \
+    apk add git && \
+    apk add openssl && \
+    apk add gnupg && \
     apk add go && \
     apk add ansible
 
